@@ -1,5 +1,6 @@
 import "@/assets/globals.css";
 import { title } from "process";
+import Navbar from "@/components/Navbar.jsx";
 
 export const metadata = {
   title: "More-Ways | פיתוח אתרים, Full-Stack וקורסי תכנות",
@@ -36,6 +37,7 @@ const MainLayout = ({ children }) => {
   return (
     <html lang="he">
       <body>
+      <Navbar />
         <main>{children}</main>
       </body>
     </html>
